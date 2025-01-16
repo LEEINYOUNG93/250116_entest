@@ -1,8 +1,7 @@
 $(document).ready(function () {
     "use strict";
-    initialize();
-
     AOS.init();
+    initialize();
 
     function initialize() {
         header();
@@ -155,4 +154,11 @@ $(document).ready(function () {
             }
         });
     }
+});
+
+$(window).on('load', function() {
+    AOS.init({
+        duration: 1000, 
+        once: false,   
+    });
 });
