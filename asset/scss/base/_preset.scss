@@ -1,0 +1,29 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.skip-menu {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #333;
+    line-height: 30px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+
+    &:focus {
+      top: 0;
+    }
+  }
+}

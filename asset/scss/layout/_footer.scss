@@ -1,0 +1,38 @@
+.footer {
+    padding: 115px 0;
+    background-color: #1c1d1c;
+
+    &__logo {
+        img {
+            width: 252px;
+            @include tablet{
+                width: 200px;
+            }
+            @include mobile{
+                width: 180px;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 21px;
+        letter-spacing: -0.53px;
+        color: #f5f5f5;
+        margin-top: 30px;
+        font-weight: 100;
+        line-height: 1.6;
+        @include tablet{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        @include mobile{
+            font-size: 14px;
+        }
+        
+        b{
+            font-weight: 500;
+            display: inline-block;
+        }
+    }
+}

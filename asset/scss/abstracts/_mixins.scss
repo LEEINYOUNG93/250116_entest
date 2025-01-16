@@ -1,0 +1,51 @@
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin multi-ellipsis($line,$lineHeight) {
+  line-height: $lineHeight;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: $line*$lineHeight;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient:vertical;
+}
+
+@mixin bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin iphone{
+  @media (max-width: $iphone){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin laptop{
+  @media (max-width: $laptop){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (max-width: $desktop){
+    @content;
+  }
+}
