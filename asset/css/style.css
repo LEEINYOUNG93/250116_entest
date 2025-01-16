@@ -231,6 +231,11 @@ table {
   padding: 115px 0;
   background-color: #1c1d1c;
 }
+@media (max-width: 810px) {
+  .footer {
+    padding: 80px 0;
+  }
+}
 .footer__logo img {
   width: 252px;
 }

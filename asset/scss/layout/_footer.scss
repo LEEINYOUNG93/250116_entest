@@ -1,6 +1,9 @@
 .footer {
     padding: 115px 0;
     background-color: #1c1d1c;
+    @include tablet{
+        padding: 80px 0;
+    }
 
     &__logo {
         img {
